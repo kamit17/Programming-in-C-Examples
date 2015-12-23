@@ -1,0 +1,1 @@
+#include<stdio.h>/*int main( ){float area ;int radius = 1 ;area = circle ( radius ) ;printf ( "\n%f", area ) ;}int circle ( int r ){float a ;a = 3.14 * r * r ;return ( a ) ;}*/ main( ){void slogan( ) ;int c = 5 ;c = slogan( ) ;printf ( "\n%d", c ) ;}void slogan( ){printf ( "\nOnly He men use C!" ) ;}

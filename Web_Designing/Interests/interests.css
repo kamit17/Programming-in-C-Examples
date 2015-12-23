@@ -1,0 +1,48 @@
+body{
+  background-color:#F7FAAA;
+}
+
+h1{
+  text-align:center;
+  color:Blue;
+}
+
+
+food {
+  color: brown;
+  text-decoration: underline;
+}
+
+
+.dish {
+  text-decoration: underline;
+  color: #082B8B;
+}
+.Places {
+  color: Blue;
+  text-decoration: underline;
+}
+.books{
+  Color:Red;
+}
+table {
+  Color:green;
+  font-family:Helvetica;
+  text-align:left;
+}
+th{
+  text-align:Center;
+  color: Blue;
+}
+table,td,th{
+  border:2px solid black;
+}
+table{
+  border-collapse:collapse;
+}
+.List{
+  Color:Purple;
+  }
+ .li li{
+  Color:Green;
+}

@@ -1,0 +1,18 @@
+/*(J)
+(a) Using conditional operators determine:
+(1) Whether the character entered through the keyboard is a lower case alphabet or not.
+(2) Whether a character entered through the keyboard is a special symbol or not.*/
+
+/*(a)*/
+#include<stdio.h>
+int main() 
+{ 
+char ch;  
+printf("Enter character:"); 
+scanf("%c",&ch); 
+if(ch>=97&&ch<=122) 
+printf("Character entered is lower case"); 
+printf("Character entered is not lower case"); 
+printf("\nPress any key to exit."); 
+getch(); 
+} 

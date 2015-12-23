@@ -1,0 +1,20 @@
+/*Given a point (x, y), write a program to find out if it lies on the x-axis, y-axis 
+or at the origin, viz. (0, 0).*/
+#include<stdio.h>
+int main()
+{
+int x,y;
+printf("Enter the coordiantes of the point");
+scanf("\n %d%d",&x,&y \n);
+if(x!==0 && y==0)
+printf(" \n the point lies on the x axis);
+else 
+if(x==0 && y!==0)
+printf(" \n the point lies on the y axis");
+else
+if(x==0 && y==0)
+printf("\n the point lies on the origin");
+else
+printf(" \n the point does not lie on any axis or origin");
+
+}
