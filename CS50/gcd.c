@@ -8,7 +8,7 @@ int main(void)
     int u, v, temp;
 
     printf("Enter the values of v and u\n");
-    scanf("%i%i",&u,&v);
+    scanf("%i %i",&u,&v);
 
     while(v!=0)
     {
