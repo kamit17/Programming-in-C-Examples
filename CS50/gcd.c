@@ -16,5 +16,7 @@ int main(void)
         u=v;
         v=temp;
     }
-    printf("The GCD  is %i\n",u,v,u);
+    printf("Their greatest common divisor is %i\n",u);
+
+    return 0;
 }
