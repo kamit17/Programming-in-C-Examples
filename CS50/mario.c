@@ -12,8 +12,7 @@
 int main()
 {
     int height=0,row,col1,col2,noOfCols;
-    // noOfrows=the no of rows
-    //noOfRows=5;
+
     do{
     printf("Height: ");
     scanf("%i",&height);
