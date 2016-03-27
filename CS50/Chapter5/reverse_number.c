@@ -9,7 +9,7 @@ int main(void)
     int number,right_digit;
 
     printf("Enter your number.\n");
-    scanf("%i",number);
+    scanf("%i",&number);
 
     while(number!=0)
     {
