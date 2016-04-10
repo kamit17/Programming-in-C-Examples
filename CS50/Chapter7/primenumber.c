@@ -13,9 +13,11 @@ int main (void)
 
   for(p=5; p <= 50; p = p + 2) //loop for running through odd integers from 5 to 50 .
   {
+    printf("%i\n",p);
     int isPrime = true; //Boolean variable set to 0
 
-    for (i = 1; isPrime && p / primes[i] >= primes[i]; ++i) // Successively divides the value of p by all the previously genreated prime numbers that are stored in the prime Array
+    for (i = 1; p / primes[i] >= primes[i]; ++i) // Successively divides the value of p by all the previously genreated prime numbers that are stored in the prime Array
+    printf("%i,%i\n",p, primes[i]/*primeIndex*/);
       if( p % primes[i] == 0)
           isPrime = false ;
 
@@ -25,7 +27,8 @@ int main (void)
         ++primeIndex;
       }
     }
-      for(i=0; i< primeIndex ; ++i)
+      for(i=0; i < primeIndex ; ++i)
+        //printf("%i\n", p);
         printf("%i ",primes[i] );
         printf("\n");
 
