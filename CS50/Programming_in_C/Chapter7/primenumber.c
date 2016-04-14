@@ -1,4 +1,4 @@
-/*The expression p/primes[i] >=primes[i] is used in the innermoset for loop to ensure that the value of p does not exceed the sqaure root of primes[i]*/
+/*The expression p/primes[i] >=primes[i] is used in the innermost for loop to ensure that the value of p does not exceed the sqaure root of primes[i]*/
 
 #include<stdio.h>
 #include<stdbool.h>
