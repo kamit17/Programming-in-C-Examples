@@ -4,7 +4,7 @@
 
 #include<stdio.h>
 
-float absoluteValue (float x)
+float absoluteValue (float x)  //function definition
 {
   if (x < 0)
     x = -x;
@@ -18,6 +18,14 @@ float squareRoot (float x)
 
   const float epsilon = .000001;
   float   guess = 1.0;
+  float absoluteValue (float x);
+
+  if (x<0)
+  {
+    printf("Negative argument to square root .\n");
+
+    return -1.0;
+  }
 
   while( absoluteValue (guess * guess - x) >= epsilon)
       guess = (x /guess + guess) / 2.0;
@@ -29,6 +37,6 @@ int main (void ) {
   /* code */
   printf("squareRoot (2.0) = %f\n",squareRoot (2.0));
   printf("squareRoot (144.0) = %f\n",squareRoot (144.0));
-  printf("squareRoot (11.5) = %f\n",squareRoot (11.5));
+  printf("squareRoot (-2) = %f\n",squareRoot (-2));
   return 0;
 }
