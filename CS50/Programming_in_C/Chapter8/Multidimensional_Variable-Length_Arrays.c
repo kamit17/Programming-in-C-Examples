@@ -27,7 +27,10 @@ int main (void)
 
   }
 
-  //Function to multiply a 3 X 55 array by a scalar
+  /*
+The rows and columns in the matrix, nRows, and nCols, must be listed as
+arguments before the matrix itself so that the compiler knows about these
+parameters before it encounters the declaration of matrix in the argument list*/
 
   void scalarMultiply (int nRows, int nCols,int matrix[nRows][nCols], int scalar)
   {
