@@ -10,6 +10,8 @@ void calculateTriangularNumber (int n)  //function prototype declaration
     triangularNumber += i;
 
   printf("Triangular number  of %i is %i\n",n,triangularNumber);
+
+  //return triangularNumber ;
 }
 int main (void)
 {
