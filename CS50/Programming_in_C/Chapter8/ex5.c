@@ -1,14 +1,4 @@
-/*Calculating the square root of a number
-
-Newton-Raphson Method to Compute the Square Root of x
-Step 1: Step 2: Step 3:
-Step 4:
-Set the value of guess to 1.
-If |guess2 - x| < ε, proceed to step 4.
-Set the value of guess to (x / guess + guess) / 2 and return to step 2.
-The guess is the approximation of the square root.
-*/
-
+/*Calculating the square root of a number*/
 
 //Function to calculate the absolute value of a number
 
@@ -26,8 +16,9 @@ float absoluteValue (float x)  //function definition
 float squareRoot (float x)
 {
 
-  const float epsilon = .000001;
+  const float epsilon = 1.000001;
   float   guess = 1.0;
+  /*
   float absoluteValue (float x);
 
   if (x<0)
@@ -36,9 +27,16 @@ float squareRoot (float x)
 
     return -1.0;
   }
+  */
+  do
+  {
+    guess = (x/guess+guess) / 2.0;
+  }
 
-  while( absoluteValue (guess * guess - x) >= epsilon)
-      guess = (x /guess + guess) / 2.0;
+  while( absoluteValue (guess * guess - x) >= epsilon);
+
+      //printf("  guess is %f\n", guess);
+      //guess = (x /guess + guess) / 2.0;
 
     return guess;
 }
@@ -47,6 +45,11 @@ int main (void ) {
   /* code */
   printf("squareRoot (2.0) = %f\n",squareRoot (2.0));
   printf("squareRoot (144.0) = %f\n",squareRoot (144.0));
-  printf("squareRoot (-2) = %f\n",squareRoot (-2));
+  printf("squareRoot (7.5) = %f\n",squareRoot (7.5));
+  /*
+  printf("squareRoot (2.0) = %f\n",squareRoot (2.0, 0.025));
+  printf("squareRoot (144.0) = %f\n",squareRoot (144.0,0.75));
+  printf("squareRoot (7.5) = %f\n",squareRoot (7.5, 0.65));
+  */
   return 0;
 }
