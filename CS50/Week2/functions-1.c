@@ -4,20 +4,20 @@
 int GetPositiveInt();
 int main(void)
 {
-    int n = GetPositiveInt();
-    printf("Thanks for the %i!\n",n);
+    int a = GetPositiveInt();
+    printf("Thanks for the %i!\n",a);
 }
 
 
 int GetPositiveInt(void)
 {
-    int n;
+    int a;
     do
     {
         printf("please give me a postive int: ");
-        n = GetInt();
+        a = GetInt();
     }
-    while(n<1);
+    while(a<1);
 
-    return n;
+    return a;
 }
