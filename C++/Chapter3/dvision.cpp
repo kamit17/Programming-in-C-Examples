@@ -7,9 +7,10 @@ using namespace std;
 int number1,number2;
 
   cout << "Enter the two numbers: ";
-  cin >> number1;
-  cin >> number2;
+  //cin >> number1;
+  //cin >> number2;
   //int integer_divion;
-  cout << number1 << "/" << number2 << "="<<number1/number2 <<endl;
+  //cout << number1 << "/" << number2 << "="<<number1/number2 <<endl;
   //return 0;
+  getline(cin,number1,'');
 }
