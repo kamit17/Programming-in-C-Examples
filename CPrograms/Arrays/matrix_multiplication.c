@@ -1,44 +1,53 @@
-/* MATRIX MULTIPLICATION.*/
 #include<stdio.h>
 int main()
 {
-  int a[2][2],b[2][2],c[2][2];
-  int i,j,k,m,n,o;
-  /* here a is mxn,b is nxo,c=mxo matrices.*/
+	int m,n,p,q,k,sum=0,c,d;
+	int first[10][10],second[10][10],product[10][10];
 
-  /*Reading the data*/
-printf("Enter the Dimensions of the matrices\n");
-  scanf("%d %d %d ",&m,&n,&o);    //Reading the Three Dimensions
+	printf("Enter the size of the first array\n");
+	scanf("%d%d",&m,&n);
+	printf("Enter the elements of the first array\n");
+	for(c=0;c<m;c++)
+		for(d=0;d<n;d++)
+			scanf("%d",&first[c][d]);
 
-  //Reading in array a
-  printf("Enter Elements of the first matrix\n");
-  for(i=1;i<=m;i++)
-  for(j=1;j<=n;j++)
-  scanf("%d",&a[i][j]);
+	printf("Enter the size of the second array\n");
+	scanf("%d%d",&p,&q);
 
-  //Reading in array b
-  printf("Enter elements of the second matrix\n");
-  for(i=1;i<=n;i++)
-  for(j=1;j<=o;j++)
-  scanf("%d",&b[i][j]);
+	if(n!=p)
+		printf("Matrix cannote be  multiplied with each other\n");
+	else
+	{
+	printf("Enter the  elements of the second array\n");
+	for(c=0;c<p;c++)
+		for(d=0;d<q;d++)
+			scanf("%d",&second[c][d]);
 
-  /*Performing the multiplication*/
+	for(c=0;c<m;c++)
+	{
+		for(d=0;d<q;d++)
+		{
+			for(k=0;k<p;k++)
+			{
+				sum=sum+first[c][k]*second[k][d];
+			}
+			product[c][d]=sum;
+			sum=0;
+		}
+	}
+	printf("product of entered matrices:\n");
 
-  for(i=1;i<=m;i++)
-  for(j=1;j<=o;j++)
-  {
-    c[i][j]=0;
-
-
-    for(k=1;k<=n;k++)
-    c[i][j]=c[i][j]+a[i][k]*b[k][j];
-  }
-
-  /*printing the result*/
-  for(i=1;i<=m;i++)
-  for(j=1;j<=o;j++)
-  printf(" %d ", c[i] [j]);
-  printf("\n");
-
-
+	for(c=0;c<m;c++){
+		for(d=0;d<q;d++)
+			printf("%d\t",product[c][d]);
+		printf("\n");
+	}
+	}
+	return 0;
 }
+
+
+
+
+
+

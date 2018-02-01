@@ -1,1 +1,1 @@
-This is a repository for CPrograms from Let Us C .
+A Collection of Programs and exercises in C based on the book "Let Us C " by Yeshwant Kanetkar.
